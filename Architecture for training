@@ -7,7 +7,7 @@ def ConvBlock(in_channels, out_channels, pool=False):
     return nn.Sequential(*layers)
 
 
-# resnet architecture 
+# resnet architecture for plant disease detection 
 class ResNet9(ImageClassificationBase):
     def __init__(self, in_channels, num_diseases):
         super().__init__()
